@@ -1,15 +1,15 @@
 {
   "name": "angular-drywall",
   "description": "A MEAN stack User Management web app",
-  "version": "0.1.10",
+  "version": "0.0.0",
   "keywords": [
     "angular",
     "drywall"
   ],
   "license": "MIT",
   "author": {
-    "name": "Arthur C. Kao",
-    "email": "arthurckao@gmail.com"
+    "name": "Gideon Aduku",
+    "email": "gideonaduku@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "grunt test"
+    "test": "grunt test",
+    "lint": "esw *.js server config --color",
+    "lint:watch": "yarn lint -- --watch"
   },
   "dependencies": {
     "async": "^1.x.x",
@@ -43,7 +45,8 @@
     "passport-oauth": "^1.x.x",
     "passport-tumblr": "^0.1.x",
     "passport-twitter": "^1.x.x",
-    "serve-static": "^1.9.x"
+    "serve-static": "^1.9.x",
+    "yarn": "^1.7.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -63,6 +66,10 @@
     "grunt-usemin": "^3.0.0",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
+    "eslint": "3.16.1",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-watch": "2.1.14",
     "karma-chrome-launcher": "~0.1",
     "karma-firefox-launcher": "~0.1",
     "karma-jasmine": "^0.3.5",
